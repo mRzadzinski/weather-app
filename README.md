@@ -2,7 +2,7 @@
 
 ![interface](./src/img/screenshot.png)
 
-[Check live!]()
+[Check live!](https://mrzadzinski.github.io/weather-app/)
 
 Simple weather app.
 
