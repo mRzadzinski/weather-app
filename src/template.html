@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-</head>
-<body>
-
-
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/e66763f185.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Weather App</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="text-input">
+				<i class="fa-solid fa-magnifying-glass fa-lg"></i>
+				<input
+					type="text"
+					class="form-control"
+					maxlength="20"
+					placeholder="Your City..."
+				/>
+			</div>
+			<div class="info">
+				<div class="left">
+					<div class="city"></div>
+					<div class="overview"></div>
+					<div class="temp"></div>
+					<div class="weather-icon-container">
+						<img id="weather-icon" src="" alt="weather-icon" />
+					</div>
+				</div>
+				<div class="right">
+					<div class="feels-like title">Feels like:</div>
+					<div class="feels-like value"></div>
+					<div class="humidity title">Humidity:</div>
+					<div class="humidity value"></div>
+					<div class="pressure title">Pressure:</div>
+					<div class="pressure value"></div>
+					<div class="wind-speed title">
+						Wind <br />
+						speed:
+					</div>
+					<div class="wind-speed value"></div>
+				</div>
+			</div>
+			<div class="switch-container">
+				<div class="celsius">°C</div>
+				<label class="switch">
+					<input id="checkbox" type="checkbox" />
+					<span class="toggle round"></span>
+				</label>
+				<div class="fahrenheit">°F</div>
+			</div>
+		</div>
+	</body>
 </html>
